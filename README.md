@@ -60,6 +60,7 @@ This repository contains Python implementations of various data structures and a
 ### Searching Algorithms
 
 - [Binary Search](./algorithms/searching/binary_search.py) - implementation of the binary search algorithm for searching a sorted array.
+- [linear Search](./algorithms/searching/linear_search.py) - implementation of the linar search algorithm for searching a  array.
 
 ### Graph Algorithms
 
