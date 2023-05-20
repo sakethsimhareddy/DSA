@@ -36,12 +36,29 @@ class LinkedList():
             i += 1
         return None
     def delete(self,position):
-        pass
-
+        if position==0:
+            current_node=self.head
+            self.head=self.head.next
+            return current_node.data
+        else:
+            current_node=self.head
+            for i in range(0,position):
+                p=current_node
+                current_node=current_node.next
+            p.next=current_node.next
+            return current_node.data
+'''
+test case:
 list1 = LinkedList()
 list1.append(1)
 list1.append(3)
 list1.append(5)
 list1.show_element()
-print(list1.lenght())
-
+1
+3
+5
+list1.delete(1)
+list1.show_element()
+1
+5
+'''
